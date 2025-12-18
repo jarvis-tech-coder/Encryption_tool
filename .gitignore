@@ -1,0 +1,21 @@
+bin/
+*.o
+.DS_Store
+.vscode/
+
+# Python temporary files
+__pycache__/
+*.spec
+
+# C compiled files
+*.o
+*.obj
+
+# Executables
+*.exe
+bin/
+dist/
+build/
+
+# VS Code settings
+.vscode/

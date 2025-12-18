@@ -1,0 +1,55 @@
+1. One-Time Setup (Sirf shuru mein ek baar)
+Jab aapne naya project shuru kiya tha aur libraries install karni thi.
+
+Libraries Install karna:
+
+PowerShell
+
+pip install customtkinter pillow
+PyInstaller Install karna (EXE banane ke liye):
+
+PowerShell
+
+pip install pyinstaller
+2. Daily Workflow (Development ke dauran)
+Jab aap code likh rahe hote hain aur test karna chahte hain.
+
+C Code (Backend) Compile karna: (Jab bhi C code change karein)
+
+PowerShell
+
+gcc backend/main.c backend/cipher.c -o bin/encryptor.exe
+Python App Test karna (Bina EXE banaye): (Jab Python code change karein)
+
+PowerShell
+
+python frontend/app.py
+3. Final Production (Software Launch) 🚀
+Jab aap software final karke dost ko bhejna chahte hain.
+
+Python ka Final EXE banana (Icon aur Assets ke saath): (Yeh command sabse important hai)
+
+PowerShell
+
+python -m PyInstaller --noconsole --onefile --icon "assets/icon.ico" --add-data "assets;assets" frontend/app.py
+Engine (C Code) ko Final Folder me Copy karna: (PyInstaller ke baad ye zarur karna hai)
+
+PowerShell
+
+if (!(Test-Path dist\bin)) { mkdir dist\bin }; cp bin\encryptor.exe dist\bin\ -Force
+4. Running the App (Terminal se)
+Agar aap double-click nahi karna chahte.
+
+Final App Chalana:
+
+PowerShell
+
+./dist/app.exe
+📝 Summary: Project update karne ka Sahi Order
+Jab bhi aap code update karein, bas ye 3 commands line se chalayein:
+
+Compile Engine: gcc backend/main.c backend/cipher.c -o bin/encryptor.exe
+
+Build App: python -m PyInstaller --noconsole --onefile --icon "assets/icon.ico" --add-data "assets;assets" frontend/app.py
+
+Copy Engine: if (!(Test-Path dist\bin)) { mkdir dist\bin }; cp bin\encryptor.exe dist\bin\ -Force
