@@ -1,24 +1,40 @@
-# CLI File Encryption Tool
+# Encryption Tool 🔐
 
-A lightweight, command-line utility written in C for encrypting and decrypting files using XOR logic. This tool demonstrates low-level file I/O operations and modular C programming.
+## Overview
+A high-performance hybrid file encryption tool designed to securely
+encrypt and decrypt files using a Python-based GUI and a C-based
+low-level processing engine.
 
 ## Features
-- **Simple Security:** Uses XOR encryption logic.
-- **Universal:** Works on text files, images, PDFs, and binaries.
-- **Memory Efficient:** Processes files byte-by-byte (suitable for large files).
+- Hybrid architecture (Python + C)
+- Fast encryption and decryption
+- Modern GUI using CustomTkinter
+- Secure file handling
 
-## How to Build
-1. Clone the repository.
-2. Run `make` in the terminal.
-   ```bash
-   make
+## Tech Stack
+- Python
+- C
+- CustomTkinter
 
-## Graphical User Interface (GUI)
-This project includes a native Windows GUI built using the **Win32 API**.
-- **User-Friendly:** Visual file picker dialog.
-- **Lightweight:** No external libraries required (pure C).
+## Architecture
+The application uses Python for the graphical user interface and
+C for low-level, high-speed encryption operations to improve performance.
 
-**To Run the GUI:**
-Double-click `bin/gui_tool.exe` or run via terminal:
+## How to Run
 ```bash
-./bin/gui_tool.exe
+git clone https://github.com/jarvis-tech-coder/Encryption_tool
+cd Encryption_tool
+python main.py
+<img width="1366" height="768" alt="Screenshot 2026-01-02 001724" src="https://github.com/user-attachments/assets/c47b1f90-c0fe-4f03-8f8d-bf0c9d816963" />
+
+## Future Improvements
+- Implement industry-standard AES and RSA encryption
+- Integrate cloud storage encryption
+- Improve performance using multithreading
+
+## Author
+Mohd Ashad  
+Aspiring Data Engineer  
+GitHub: https://github.com/jarvis-tech-coder  
+LinkedIn: https://www.linkedin.com/in/mohd-ashad999/
+
